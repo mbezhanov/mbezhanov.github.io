@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery plugin: Tablesorter 2.0 - Sorting child rows along with their parents.</title>
+	<link rel="stylesheet" href="css/jq.css" type="text/css" media="print, projection, screen" />
+	<link rel="stylesheet" href="../themes/blue/style.css" type="text/css" id="" media="print, projection, screen" />
+	<script type="text/javascript" src="jquery-latest.js"></script>
+	<script type="text/javascript" src="jquery.tablesorter.marin.js"></script>
+	<script type="text/javascript" src="js/docs.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" id="js">
+    $(document).ready(function() {
+        $("table").tablesorter();
+    });
+    </script>
+</head>
+<body>
+<div id="banner">	
+	<h1>table<em>sorter</em></h1>
+	<h2>Sorting child rows along with their parents.</h2>
+	<h3>Flexible client-side table sorting</h3>
+</div>
+<div id="main">
+	<h1>Demo</h1>
+	<div id="demo">
+		<table cellspacing="1" class="tablesorter">
+			<thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Campaign</th>
+                    <th>Visits</th>
+                    <th>Clicks</th>
+                    <th>Leads</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Austria</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="0">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>601000</td>
+                    <td>295106</td>
+                    <td>86639</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>620497</td>
+                    <td>243338</td>
+                    <td>41795</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>766463</td>
+                    <td>222061</td>
+                    <td>25882</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>881919</td>
+                    <td>255362</td>
+                    <td>93540</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>551295</td>
+                    <td>222341</td>
+                    <td>15858</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>963962</td>
+                    <td>225651</td>
+                    <td>97552</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>692205</td>
+                    <td>277969</td>
+                    <td>76832</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>827908</td>
+                    <td>221096</td>
+                    <td>83404</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="0">
+                    <td></td>
+                    <td>Campaign Y</td>
+                    <td>530941</td>
+                    <td>288303</td>
+                    <td>39859</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Belgium</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="1">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="1">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>750267</td>
+                    <td>206914</td>
+                    <td>91912</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="1">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>662373</td>
+                    <td>255281</td>
+                    <td>68013</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="1">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>712045</td>
+                    <td>268269</td>
+                    <td>41919</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="1">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>500290</td>
+                    <td>270275</td>
+                    <td>51668</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bulgaria</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="2">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>506190</td>
+                    <td>254712</td>
+                    <td>20133</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>918276</td>
+                    <td>266834</td>
+                    <td>17931</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>665230</td>
+                    <td>244491</td>
+                    <td>77388</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign H</td>
+                    <td>878857</td>
+                    <td>214190</td>
+                    <td>68111</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>926787</td>
+                    <td>235005</td>
+                    <td>48672</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>956434</td>
+                    <td>273359</td>
+                    <td>80155</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>847986</td>
+                    <td>291752</td>
+                    <td>68139</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>735511</td>
+                    <td>255236</td>
+                    <td>72667</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>535802</td>
+                    <td>245861</td>
+                    <td>78089</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="2">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>958691</td>
+                    <td>280930</td>
+                    <td>88013</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Croatia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="3">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>764347</td>
+                    <td>299675</td>
+                    <td>32854</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>545139</td>
+                    <td>277609</td>
+                    <td>85492</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>939742</td>
+                    <td>242926</td>
+                    <td>42861</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign H</td>
+                    <td>772473</td>
+                    <td>221859</td>
+                    <td>38254</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>624393</td>
+                    <td>263690</td>
+                    <td>86172</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>879121</td>
+                    <td>239787</td>
+                    <td>98795</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>951575</td>
+                    <td>230329</td>
+                    <td>29422</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>518086</td>
+                    <td>251653</td>
+                    <td>59530</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="3">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>628202</td>
+                    <td>271818</td>
+                    <td>50979</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cyprus</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="4">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>965259</td>
+                    <td>252740</td>
+                    <td>64102</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>820434</td>
+                    <td>284713</td>
+                    <td>96146</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>562130</td>
+                    <td>261137</td>
+                    <td>60777</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>862174</td>
+                    <td>231961</td>
+                    <td>15060</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>986671</td>
+                    <td>208068</td>
+                    <td>41603</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="4">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>571905</td>
+                    <td>250138</td>
+                    <td>64501</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Czech Republic</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="5">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>605555</td>
+                    <td>262436</td>
+                    <td>24801</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>588638</td>
+                    <td>205839</td>
+                    <td>46084</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>786759</td>
+                    <td>229987</td>
+                    <td>70206</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>818964</td>
+                    <td>256466</td>
+                    <td>56400</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>769869</td>
+                    <td>222851</td>
+                    <td>14385</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>893882</td>
+                    <td>258940</td>
+                    <td>51459</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>971489</td>
+                    <td>260379</td>
+                    <td>86259</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="5">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>922054</td>
+                    <td>202162</td>
+                    <td>55148</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Denmark</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="6">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>899242</td>
+                    <td>218796</td>
+                    <td>91685</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>729563</td>
+                    <td>228385</td>
+                    <td>48058</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>966023</td>
+                    <td>204228</td>
+                    <td>38120</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>679267</td>
+                    <td>248334</td>
+                    <td>81212</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>722295</td>
+                    <td>260085</td>
+                    <td>34717</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="6">
+                    <td></td>
+                    <td>Campaign Y</td>
+                    <td>724260</td>
+                    <td>273879</td>
+                    <td>42250</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Estonia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="7">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>936451</td>
+                    <td>224963</td>
+                    <td>52041</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>837733</td>
+                    <td>203453</td>
+                    <td>72826</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>570043</td>
+                    <td>256016</td>
+                    <td>59070</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>698726</td>
+                    <td>222338</td>
+                    <td>31986</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>978808</td>
+                    <td>235225</td>
+                    <td>99848</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="7">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>866205</td>
+                    <td>245818</td>
+                    <td>28175</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Finland</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="8">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="8">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>750316</td>
+                    <td>289216</td>
+                    <td>71518</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="8">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>931892</td>
+                    <td>273559</td>
+                    <td>28061</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="8">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>991936</td>
+                    <td>281552</td>
+                    <td>20843</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="8">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>692095</td>
+                    <td>256486</td>
+                    <td>39765</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="8">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>796767</td>
+                    <td>251411</td>
+                    <td>24231</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="9">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>515309</td>
+                    <td>240284</td>
+                    <td>87159</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>930269</td>
+                    <td>200705</td>
+                    <td>11764</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>654162</td>
+                    <td>273700</td>
+                    <td>83538</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>843703</td>
+                    <td>220598</td>
+                    <td>59135</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>942781</td>
+                    <td>201000</td>
+                    <td>96067</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>613478</td>
+                    <td>257311</td>
+                    <td>13040</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>637740</td>
+                    <td>272368</td>
+                    <td>12713</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>567843</td>
+                    <td>237404</td>
+                    <td>58952</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="9">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>603408</td>
+                    <td>256675</td>
+                    <td>68417</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="10">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>682658</td>
+                    <td>285431</td>
+                    <td>29250</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>759182</td>
+                    <td>272174</td>
+                    <td>73214</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>785280</td>
+                    <td>219842</td>
+                    <td>83458</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>841136</td>
+                    <td>204855</td>
+                    <td>13925</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>692744</td>
+                    <td>226418</td>
+                    <td>33735</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>808069</td>
+                    <td>262619</td>
+                    <td>88718</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>513844</td>
+                    <td>287300</td>
+                    <td>93553</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>709749</td>
+                    <td>294924</td>
+                    <td>89911</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="10">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>569161</td>
+                    <td>296462</td>
+                    <td>37200</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Greece</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="11">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>762897</td>
+                    <td>221297</td>
+                    <td>21682</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>634697</td>
+                    <td>289115</td>
+                    <td>25903</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign H</td>
+                    <td>736701</td>
+                    <td>259897</td>
+                    <td>23643</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>956667</td>
+                    <td>261927</td>
+                    <td>43894</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>677678</td>
+                    <td>298831</td>
+                    <td>81302</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>794084</td>
+                    <td>299976</td>
+                    <td>58079</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>807665</td>
+                    <td>276796</td>
+                    <td>53739</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>994159</td>
+                    <td>225582</td>
+                    <td>62773</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>546822</td>
+                    <td>235627</td>
+                    <td>93818</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="11">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>690836</td>
+                    <td>297226</td>
+                    <td>35832</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hungary</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="12">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>798323</td>
+                    <td>286196</td>
+                    <td>30453</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>518645</td>
+                    <td>253459</td>
+                    <td>60223</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>838434</td>
+                    <td>238534</td>
+                    <td>76365</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>897913</td>
+                    <td>286347</td>
+                    <td>18948</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>985841</td>
+                    <td>289820</td>
+                    <td>45659</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>629608</td>
+                    <td>247129</td>
+                    <td>30613</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="12">
+                    <td></td>
+                    <td>Campaign Y</td>
+                    <td>804185</td>
+                    <td>249529</td>
+                    <td>53423</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ireland</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="13">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="13">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>812472</td>
+                    <td>246306</td>
+                    <td>33947</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="13">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>593357</td>
+                    <td>258349</td>
+                    <td>38502</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="13">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>965865</td>
+                    <td>201089</td>
+                    <td>21483</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="13">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>908358</td>
+                    <td>296175</td>
+                    <td>50647</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="13">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>598654</td>
+                    <td>204694</td>
+                    <td>30665</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Italy</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="14">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>924018</td>
+                    <td>245081</td>
+                    <td>10587</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>605351</td>
+                    <td>235943</td>
+                    <td>70885</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>931263</td>
+                    <td>262204</td>
+                    <td>57120</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>863108</td>
+                    <td>234832</td>
+                    <td>27368</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>563553</td>
+                    <td>233153</td>
+                    <td>48591</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>699359</td>
+                    <td>292187</td>
+                    <td>29127</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>537318</td>
+                    <td>233137</td>
+                    <td>20740</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="14">
+                    <td></td>
+                    <td>Campaign Y</td>
+                    <td>961925</td>
+                    <td>262747</td>
+                    <td>55661</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Latvia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="15">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>676176</td>
+                    <td>258225</td>
+                    <td>69112</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>811490</td>
+                    <td>230345</td>
+                    <td>36813</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>785046</td>
+                    <td>297486</td>
+                    <td>57175</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>634484</td>
+                    <td>278593</td>
+                    <td>93759</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>750535</td>
+                    <td>274496</td>
+                    <td>52194</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>924551</td>
+                    <td>219786</td>
+                    <td>15480</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>587978</td>
+                    <td>298849</td>
+                    <td>69275</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>880947</td>
+                    <td>247499</td>
+                    <td>37285</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>714568</td>
+                    <td>237233</td>
+                    <td>32230</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="15">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>596831</td>
+                    <td>255775</td>
+                    <td>23983</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lithuania</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="16">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>956120</td>
+                    <td>203526</td>
+                    <td>60644</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>617798</td>
+                    <td>282283</td>
+                    <td>59380</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>592718</td>
+                    <td>232268</td>
+                    <td>16879</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>964079</td>
+                    <td>295155</td>
+                    <td>90423</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>650596</td>
+                    <td>298630</td>
+                    <td>88030</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="16">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>772755</td>
+                    <td>224196</td>
+                    <td>55702</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Luxembourg</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="17">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>717750</td>
+                    <td>275648</td>
+                    <td>37827</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>840958</td>
+                    <td>297542</td>
+                    <td>49058</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>943090</td>
+                    <td>228220</td>
+                    <td>49656</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>784249</td>
+                    <td>233053</td>
+                    <td>67556</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>819187</td>
+                    <td>243307</td>
+                    <td>70622</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>665572</td>
+                    <td>218898</td>
+                    <td>31130</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>740045</td>
+                    <td>266839</td>
+                    <td>32049</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="17">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>973337</td>
+                    <td>214528</td>
+                    <td>33520</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Malta</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="18">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>820002</td>
+                    <td>234916</td>
+                    <td>50244</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>718053</td>
+                    <td>269230</td>
+                    <td>16464</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>642029</td>
+                    <td>285675</td>
+                    <td>35801</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>731396</td>
+                    <td>246723</td>
+                    <td>71765</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>817190</td>
+                    <td>258259</td>
+                    <td>76284</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>706999</td>
+                    <td>254690</td>
+                    <td>58400</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>946164</td>
+                    <td>238942</td>
+                    <td>52608</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>760512</td>
+                    <td>225727</td>
+                    <td>74487</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="18">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>619867</td>
+                    <td>240031</td>
+                    <td>13633</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Netherlands</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="19">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>821749</td>
+                    <td>276537</td>
+                    <td>30134</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>717095</td>
+                    <td>282703</td>
+                    <td>21503</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>554760</td>
+                    <td>268869</td>
+                    <td>63883</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>724612</td>
+                    <td>251575</td>
+                    <td>56299</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>955091</td>
+                    <td>252876</td>
+                    <td>58423</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>779427</td>
+                    <td>262396</td>
+                    <td>20742</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>926429</td>
+                    <td>293189</td>
+                    <td>72052</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="19">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>674131</td>
+                    <td>251292</td>
+                    <td>20775</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Poland</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="20">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="20">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>607475</td>
+                    <td>255380</td>
+                    <td>34300</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="20">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>599695</td>
+                    <td>260792</td>
+                    <td>97556</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="20">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>589000</td>
+                    <td>266506</td>
+                    <td>72771</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="20">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>730579</td>
+                    <td>230053</td>
+                    <td>84916</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="20">
+                    <td></td>
+                    <td>Campaign R</td>
+                    <td>903191</td>
+                    <td>289533</td>
+                    <td>15694</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Portugal</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="21">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>532081</td>
+                    <td>269178</td>
+                    <td>49789</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>573406</td>
+                    <td>244051</td>
+                    <td>42220</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>650820</td>
+                    <td>220206</td>
+                    <td>64514</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign I</td>
+                    <td>626609</td>
+                    <td>249989</td>
+                    <td>29427</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>716196</td>
+                    <td>205053</td>
+                    <td>77157</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>688199</td>
+                    <td>295150</td>
+                    <td>54894</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>603170</td>
+                    <td>218574</td>
+                    <td>93527</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="21">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>851483</td>
+                    <td>261825</td>
+                    <td>66391</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Romania</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="22">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign A</td>
+                    <td>772705</td>
+                    <td>268392</td>
+                    <td>51147</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign B</td>
+                    <td>945973</td>
+                    <td>299980</td>
+                    <td>69314</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>649416</td>
+                    <td>208891</td>
+                    <td>28950</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>622846</td>
+                    <td>263603</td>
+                    <td>60876</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>877200</td>
+                    <td>267963</td>
+                    <td>91373</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign S</td>
+                    <td>939135</td>
+                    <td>242134</td>
+                    <td>60389</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>957561</td>
+                    <td>260642</td>
+                    <td>73707</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>582721</td>
+                    <td>218801</td>
+                    <td>74901</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>653886</td>
+                    <td>253151</td>
+                    <td>39107</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="22">
+                    <td></td>
+                    <td>Campaign Z</td>
+                    <td>533773</td>
+                    <td>248788</td>
+                    <td>93702</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Slovakia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="23">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>736859</td>
+                    <td>205546</td>
+                    <td>41309</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign D</td>
+                    <td>760440</td>
+                    <td>246962</td>
+                    <td>31524</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>661899</td>
+                    <td>286973</td>
+                    <td>34541</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>889774</td>
+                    <td>264216</td>
+                    <td>53256</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign H</td>
+                    <td>663933</td>
+                    <td>220282</td>
+                    <td>33976</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign N</td>
+                    <td>706071</td>
+                    <td>218423</td>
+                    <td>43863</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>706871</td>
+                    <td>218456</td>
+                    <td>73145</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="23">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>550938</td>
+                    <td>204480</td>
+                    <td>24512</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Slovenia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="24">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="24">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>615061</td>
+                    <td>251093</td>
+                    <td>70477</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="24">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>808093</td>
+                    <td>260151</td>
+                    <td>50512</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="24">
+                    <td></td>
+                    <td>Campaign O</td>
+                    <td>686708</td>
+                    <td>253965</td>
+                    <td>54382</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="24">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>784641</td>
+                    <td>217556</td>
+                    <td>58170</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="25">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>843629</td>
+                    <td>220030</td>
+                    <td>24004</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign E</td>
+                    <td>738964</td>
+                    <td>222403</td>
+                    <td>82297</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign G</td>
+                    <td>715453</td>
+                    <td>222461</td>
+                    <td>89363</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign H</td>
+                    <td>528593</td>
+                    <td>297312</td>
+                    <td>36550</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>813884</td>
+                    <td>265250</td>
+                    <td>86247</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>605379</td>
+                    <td>224373</td>
+                    <td>99073</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign T</td>
+                    <td>527506</td>
+                    <td>265657</td>
+                    <td>39941</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>522988</td>
+                    <td>253679</td>
+                    <td>85600</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="25">
+                    <td></td>
+                    <td>Campaign W</td>
+                    <td>801837</td>
+                    <td>246972</td>
+                    <td>80637</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="26">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign C</td>
+                    <td>771029</td>
+                    <td>220872</td>
+                    <td>47368</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>998790</td>
+                    <td>274017</td>
+                    <td>54146</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign L</td>
+                    <td>690954</td>
+                    <td>228638</td>
+                    <td>94127</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign M</td>
+                    <td>941495</td>
+                    <td>241168</td>
+                    <td>26936</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign P</td>
+                    <td>680900</td>
+                    <td>255040</td>
+                    <td>37146</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign Q</td>
+                    <td>701513</td>
+                    <td>271617</td>
+                    <td>17100</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign X</td>
+                    <td>641061</td>
+                    <td>265509</td>
+                    <td>97666</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="26">
+                    <td></td>
+                    <td>Campaign Y</td>
+                    <td>971793</td>
+                    <td>260552</td>
+                    <td>90959</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>United Kingdom</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:void(0);" class="collapseBtn" data-parent-id="27">Collapse</a></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="27">
+                    <td></td>
+                    <td>Campaign F</td>
+                    <td>599198</td>
+                    <td>242957</td>
+                    <td>65014</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="27">
+                    <td></td>
+                    <td>Campaign J</td>
+                    <td>844398</td>
+                    <td>249218</td>
+                    <td>52726</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="27">
+                    <td></td>
+                    <td>Campaign K</td>
+                    <td>695934</td>
+                    <td>282589</td>
+                    <td>26289</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="27">
+                    <td></td>
+                    <td>Campaign U</td>
+                    <td>906493</td>
+                    <td>256457</td>
+                    <td>96230</td>
+                    <td></td>
+                </tr>
+                <tr class="expand-child" data-parent-id="27">
+                    <td></td>
+                    <td>Campaign V</td>
+                    <td>735783</td>
+                    <td>295458</td>
+                    <td>41182</td>
+                    <td></td>
+                </tr>
+			</tbody>
+		</table>
+		<br/>
+	</div>
+	<h1>Javascript</h1>
+	<div id="javascript">
+		<pre class="javascript"></pre>
+	</div>
+	<h1>HTML</h1>
+	<div id="html">
+		<pre class="html"></pre>
+	</div>
+</div>
+</body>
+</html>
