@@ -11,7 +11,9 @@
 	<script src="jquery.tablesorter.marin.js"></script>
 	<script type="text/javascript" id="js">
     $(document).ready(function() {
-        $("table").tablesorter();
+        $("table").tablesorter({
+            sortChildren: true,
+        });
     });
     </script>
 </head>
