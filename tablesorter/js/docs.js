@@ -74,26 +74,6 @@
 			return false;
 		});
 
-		// update version number
-		$t = $('.current-version');
-		if ($t.length) {
-			$t.html($.tablesorter.version);
-		}
-
-		// add high visibility tags for newest versions (just grab the major revision number 2.10.0 -> 10
-		t = $.tablesorter.version.replace(/(v|version|\+)/g, '').split('.');
-		v = [ parseInt(t[0], 10) || 1, parseInt(t[1], 10) || 0 ];
-		$('.version').each(function(){
-			var i;
-			$t = $(this);
-			i = $t.text().replace(/(v|version|\+)/g, '').split('.');
-			t = [ parseInt(i[0], 10) || 1, parseInt(i[1], 10) || 0 ];
-			if (t[0] === v[0] && t[1] >= v[1] - 1 ) {
-				$t.prepend('<span class="label ' + ( t[0] === v[0] && t[1] < v[1] ? ' label-default' : ' label-success' ) +
-					'">'+ ($t.hasClass('updated') ? 'Updated' : 'New') + '</span> ');
-			}
-		});
-
 		$t = $('.accordion');
 		if ($t.length) {
 			var id, hashId,
